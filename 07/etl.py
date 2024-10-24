@@ -2,7 +2,7 @@ import csv
 
 path_arquivo = "../vendas.csv"
 
-def ler_csv(nome_arquivo_csv: str) -> list[dict] :
+def ler_csv(nome_arquivo_csv: str) -> [dict] :
     lista = []
     with open(nome_arquivo_csv, mode="r", encoding="utf-8") as arquvivo:
         leitor = csv.DictReader(arquvivo)
